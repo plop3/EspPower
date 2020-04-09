@@ -6,10 +6,7 @@
 #include <ESP8266WebServer.h>
 ESP8266WebServer server ( 80 );
 
-#ifndef STASSID
-#define STASSID "astro"
-#define STAPSK  "B546546AF0"
-#endif
+#include "WiFiP.h"
 
 const char* ssid = STASSID;
 const char* password = STAPSK;
